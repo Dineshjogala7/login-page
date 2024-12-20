@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+      <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <div class="wrapper">
+        <h1>Login</h1>
+        <div class="email">
+          <input class="Login" type="text" name=""  value="" placeholder="Enter your email"/>
+          <i class='bx bxs-envelope'></i>
+        </div>
+        <div class="email">
+          <input class="Login" type="text" name="" id="" value="" placeholder="enter your password"/>
+          <i class='bx bxs-lock-alt' ></i>
+        </div>
+        <div class="remember_me">
+          <label ><input type="checkbox" name="" id=""  /> remember me</label>
+          <a href="#">forgot password?</a>
+        </div>
+        <button type="submit">LOGIN</button>
+        <div class="register">
+          <p>Dont have account?</p>
+          <a href="#">register</a>
+        </div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>
+#cssss
+body{
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082_640.jpg');
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+}
+.wrapper{
+  border: none;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px 50px;
+  gap: 10px;
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.email{
+  width: 100%;
+  
+}
+
+i{
+  position: absolute;
+  transform: translate(-25px,10px);
+  transition: transform 0.3s ease-in-out;
+}
+input{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px 30px 10px 10px; 
+  color: white;
+  border: 1px solid #ccc;
+  position: relative;
+  
+}
+.email:hover i {
+  transform: translateX(-25px) translateY(-60%);
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.remember_me{
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.remember_me label{
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: white;
+}
+.remember_me a{
+  text-decoration: none;
+  font-weight: bold;
+}
+.remember_me a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: red;
+}
+.register{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register p{
+  margin: 0px;
+  display: inline;
+}
+.register a{
+  text-decoration: none;
+  font-weight: bold;
+}
+.register a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: red;
+}
+button{
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: brown;
+}
+
+
